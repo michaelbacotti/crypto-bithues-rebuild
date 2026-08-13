@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 — Bithues</title>
-  <meta name="description" content="">
-  <link rel="canonical" href="https://bithues.com/404/">
-  <meta property="og:title" content="404 — Bithues">
-  <meta property="og:description" content="">
+  <title>Daily Brief — Bithues</title>
+  <meta name="description" content="Curated daily editorial from the Bithues desk on crypto safety, custody, and the threats that matter right now. No trading signals.">
+  <link rel="canonical" href="https://bithues.com/newsletter/">
+  <meta property="og:title" content="Daily Brief — Bithues">
+  <meta property="og:description" content="Curated daily editorial from the Bithues desk on crypto safety, custody, and the threats that matter right now. No trading signals.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bithues.com/404/">
+  <meta property="og:url" content="https://bithues.com/newsletter/">
   <meta property="og:image" content="https://bithues.com/og-image.jpg">
   <meta name="author" content="Bithues Editorial">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,6 @@
       --rule:         #d8cfba;
       --rule-soft:    #e6dfcd;
       --ink-navy:     #1c2c4a;
-      --ink-navy-2:   #14213d;
       --accent:       #c8552b;
       --accent-hover: #a64524;
       --accent-soft:  #f0d6c7;
@@ -84,10 +83,7 @@
       margin-left: 0.5rem;
       font-weight: 500;
     }
-    nav.site-nav ul {
-      list-style: none; margin: 0; padding: 0;
-      display: flex; gap: 1.5rem; flex-wrap: wrap;
-    }
+    nav.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
     nav.site-nav a {
       color: #d8cfb6;
       font-size: 0.85rem;
@@ -100,7 +96,6 @@
       border-bottom-color: var(--accent);
     }
 
-    /* Main */
     main { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter); }
 
     /* Index header */
@@ -136,63 +131,66 @@
       margin: 0;
     }
 
-    /* Article cards */
-    .article-grid {
+    /* Brief cards */
+    .brief-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.75rem;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
       padding-bottom: 3rem;
     }
-    .article-card {
+    @media (min-width: 800px) {
+      .brief-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .brief-card {
       background: var(--paper);
       border: 1px solid var(--rule);
-      border-top: 3px solid var(--accent);
-      padding: 1.5rem 1.5rem 1.25rem;
+      border-top: 4px solid var(--accent);
+      padding: 1.75rem 1.75rem 1.5rem;
       border-radius: 0 0 var(--radius) var(--radius);
       transition: border-color 0.15s ease, transform 0.15s ease;
       display: flex;
       flex-direction: column;
     }
-    .article-card:hover {
+    .brief-card:hover {
       border-color: var(--ink);
       transform: translateY(-2px);
     }
-    .article-card .meta {
+    .brief-card .meta {
       display: flex;
       gap: 0.75rem;
       align-items: center;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: var(--ink-muted);
-      margin-bottom: 0.5rem;
-    }
-    .article-card .meta .tag {
-      font-weight: 700;
+      margin-bottom: 0.6rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+    .brief-card .meta .item-count {
       color: var(--accent);
     }
-    .article-card .meta time {
-      font-variant-numeric: tabular-nums;
-    }
-    .article-card h2 {
+    .brief-card h2 {
       font-family: var(--serif);
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 600;
       line-height: 1.2;
       letter-spacing: -0.005em;
-      margin: 0 0 0.6rem;
+      margin: 0 0 0.7rem;
     }
-    .article-card h2 a { color: var(--ink); border-bottom: none; }
-    .article-card h2 a:hover { color: var(--accent); border-bottom: none; }
-    .article-card .dek {
-      font-size: 0.95rem;
+    .brief-card h2 a { color: var(--ink); border-bottom: none; }
+    .brief-card h2 a:hover { color: var(--accent); border-bottom: none; }
+    .brief-card .brief-excerpt {
+      font-family: var(--serif);
+      font-size: 1.05rem;
       color: var(--ink-soft);
-      line-height: 1.5;
-      margin: 0 0 1rem;
+      line-height: 1.55;
+      margin: 0 0 1.25rem;
       flex: 1;
     }
-    .article-card .cta {
-      font-size: 0.82rem;
+    .brief-card .cta {
+      font-size: 0.85rem;
       font-weight: 600;
       color: var(--accent);
       letter-spacing: 0.02em;
@@ -205,103 +203,133 @@
       background: var(--paper-warm);
       border: 1px solid var(--rule);
       border-radius: var(--radius);
-      text-align: center;
-      color: var(--ink-muted);
-      font-size: 0.8rem;
     }
-    .adslot .ad-label {
+    .adslot-label {
       font-size: 0.65rem;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
       color: var(--ink-muted);
+      text-align: center;
       margin-bottom: 0.5rem;
+    }
+    .adslot ins.adsbygoogle {
+      display: block;
+      min-height: 90px;
     }
 
     /* Footer */
     footer.site-footer {
-      background: var(--paper-warm);
-      border-top: 1px solid var(--rule);
-      padding: 2.5rem var(--gutter) 2rem;
+      background: var(--ink-navy);
+      color: #c9bfa8;
+      padding: 3rem var(--gutter) 2rem;
       margin-top: 4rem;
     }
     .footer-inner {
       max-width: var(--max-w);
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
       gap: 2rem;
     }
-    @media (max-width: 720px) {
-      .footer-inner { grid-template-columns: 1fr; }
+    @media (max-width: 800px) {
+      .footer-inner { grid-template-columns: 1fr 1fr; }
     }
-    .footer-brand {
-      font-family: var(--serif);
-      font-weight: 600;
-      font-size: 1.15rem;
-      margin: 0 0 0.5rem;
-    }
-    .footer-brand a { color: var(--ink); border-bottom: none; }
-    .footer-brand a:hover { color: var(--accent); }
-    .footer-tagline {
-      font-size: 0.88rem;
-      color: var(--ink-muted);
-      max-width: 38ch;
-      line-height: 1.5;
-      margin: 0;
-    }
-    .footer-col h4 {
+    footer.site-footer h4 {
       font-family: var(--sans);
-      font-size: 0.72rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--ink-muted);
-      margin: 0 0 0.75rem;
+      color: #f1ece1;
+      margin: 0 0 1rem;
       font-weight: 600;
     }
-    .footer-col ul { list-style: none; margin: 0; padding: 0; }
-    .footer-col li { margin-bottom: 0.4rem; }
-    .footer-col a { color: var(--ink-soft); font-size: 0.88rem; border-bottom: none; }
-    .footer-col a:hover { color: var(--accent); }
-    .footer-base {
+    footer.site-footer p, footer.site-footer a {
+      font-size: 0.85rem;
+      color: #c9bfa8;
+      line-height: 1.7;
+    }
+    footer.site-footer a {
+      border-bottom: none;
+      color: #d8cfb6;
+    }
+    footer.site-footer a:hover { color: var(--accent); }
+    footer.site-footer ul { list-style: none; margin: 0; padding: 0; }
+    footer.site-footer ul li { margin-bottom: 0.4rem; }
+    .footer-bottom {
       max-width: var(--max-w);
       margin: 2rem auto 0;
       padding-top: 1.5rem;
-      border-top: 1px solid var(--rule);
-      font-size: 0.78rem;
-      color: var(--ink-muted);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
+      border-top: 1px solid #2d3a5b;
+      font-size: 0.75rem;
+      color: #8a8270;
+      text-align: center;
     }
-    .footer-base a { color: var(--ink-muted); border-bottom: 1px dotted var(--rule); }
-    .footer-base a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9312870448453345" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Bithues Daily Brief",
+  "url": "https://bithues.com/newsletter/",
+  "description": "Daily editorial on crypto safety, custody, and current threats.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bithues",
+    "url": "https://bithues.com"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Daily Brief: August 13, 2026",
+      "url": "https://bithues.com/newsletter/2026-08-13/",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "description": "If you read one story today, read the Blockaid point: \"private-key compromise is the original sin of crypto.\" The day\u2019s feed is dominated by a single thread \u2014 private-key leakage \u2014 and the related kno",
+      "author": {
+        "@type": "Organization",
+        "name": "Bithues Editorial"
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
-<header class="site-header">
+  <header class="site-header">
   <div class="site-header-inner">
     <div class="nav-brand"><a href="/">Bithues<span class="tag">Digital asset intelligence</span></a></div>
     <nav class="site-nav"><ul><li><a href="/guides/">Guides</a></li><li><a href="/safety/">Safety</a></li><li><a href="/research/">Research</a></li><li><a href="/tools/">Tools</a></li><li><a href="/newsletter/">News</a></li><li><a href="/paths/">Learn</a></li><li><a href="/about/">About</a></li></ul></nav>
   </div>
 </header>
-<main>
-  <section class="index-header">
-    <p class="eyebrow">404</p>
-    <h1>Page not found</h1>
-    <p class="dek"></p>
-  </section>
 
-  <div class="article-grid"><section class="index-header">
-      <p class="eyebrow">404</p>
-      <h1>Page not found</h1>
-      <p class="dek">The page you were looking for doesn't exist on Bithues. Try the <a href="/guides/">Guides index</a> or the <a href="/">homepage</a>.</p>
-    </section></div>
+  <main>
+    <section class="index-header">
+      <p class="eyebrow">Daily Brief</p>
+      <h1>The Brief: what happened today, and what it means for you</h1>
+      <p class="dek">A daily editorial from the Bithues desk on the crypto safety, custody, and threat stories worth your attention. No trading signals, no price calls — just the news, parsed for holders and users.</p>
+    </section>
 
-  
-</main>
-<footer class="site-footer">
+    <div class="brief-grid">
+      <article class="brief-card">
+      <div class="meta"><time datetime="2026-08-13">August 13, 2026</time><span class="item-count">15 items</span></div>
+      <h2><a href="/newsletter/2026-08-13/">August 13, 2026</a></h2>
+      <p class="brief-excerpt">If you read one story today, read the Blockaid point: "private-key compromise is the original sin of crypto." The day’s feed is dominated by a single thread — private-key leakage — and the related…</p>
+      <a href="/newsletter/2026-08-13/" class="cta">Read the brief →</a>
+    </article>
+    </div>
+
+    <div class="adslot">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-9312870448453345"
+    data-ad-slot="1216992329"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+</div>
+  </main>
+
+  <footer class="site-footer">
   <div class="footer-inner">
     <div>
       <p class="footer-brand"><a href="/">Bithues</a></p>

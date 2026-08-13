@@ -285,6 +285,145 @@
       color: var(--accent);
     }
 
+    /* Daily brief */
+    .morning-brief {
+      background: var(--paper-warm);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 1.75rem;
+      margin: 0 0 2.5rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .morning-brief h2 {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+    }
+    .morning-brief p {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      line-height: 1.55;
+      color: var(--ink);
+      margin: 0;
+    }
+    .brief-items {
+      margin: 2.5rem 0;
+    }
+    .brief-items h2 {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin: 0 0 1.5rem;
+      font-weight: 600;
+    }
+    .brief-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .brief-item:last-child {
+      border-bottom: none;
+    }
+    .brief-item h3 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      line-height: 1.3;
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.005em;
+    }
+    .brief-item h3 a {
+      color: var(--ink);
+      border-bottom: none;
+    }
+    .brief-item h3 a:hover {
+      color: var(--accent);
+      border-bottom: none;
+    }
+    .editor-note {
+      margin: 0 0 0.75rem;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid var(--accent);
+      background: var(--paper-warm);
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: var(--ink-soft);
+    }
+    .source-excerpt {
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+    .source-excerpt .source-label {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+    .brief-footer {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      margin: 2.5rem 0 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    .related-reading {
+      margin: 2.5rem 0 0;
+      padding: 1.5rem 1.75rem;
+      background: var(--paper-warm);
+      border-radius: var(--radius);
+      border-left: 4px solid var(--accent);
+    }
+    .related-reading h2 {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 1rem;
+    }
+    .related-reading ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .related-reading li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .related-reading li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+    .related-reading li a {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .related-reading li a:hover {
+      color: var(--accent);
+    }
+    .related-reading .related-dek {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+    }
+
     /* footer */
     footer.site-footer {
       background: var(--paper-warm);
@@ -359,7 +498,7 @@
 <header class="site-header">
   <div class="site-header-inner">
     <div class="nav-brand"><a href="/">Bithues<span class="tag">Digital asset intelligence</span></a></div>
-    <nav class="site-nav"><ul><li><a href="/guides/">Guides</a></li><li><a href="/safety/">Safety</a></li><li><a href="/research/">Research</a></li><li><a href="/tools/">Tools</a></li><li><a href="/paths/">Learn</a></li><li><a href="/about/">About</a></li></ul></nav>
+    <nav class="site-nav"><ul><li><a href="/guides/">Guides</a></li><li><a href="/safety/">Safety</a></li><li><a href="/research/">Research</a></li><li><a href="/tools/">Tools</a></li><li><a href="/newsletter/">News</a></li><li><a href="/paths/">Learn</a></li><li><a href="/about/">About</a></li></ul></nav>
   </div>
 </header>
 <main class="narrow">
