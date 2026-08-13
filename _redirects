@@ -1,0 +1,2 @@
+# Bithues — legacy .html → clean URL redirects
+https://www.bithues.com/* https://bithues.com/:splat 301!

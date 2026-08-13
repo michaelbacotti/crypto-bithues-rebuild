@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Crypto Scam Red-Flag Checklist</title>
+  <meta name="description" content="A practical checklist for identifying crypto scams before you lose money. Works for DMs, investment offers, 'support' calls, and too-good-to-be-true claims.">
+  <link rel="canonical" href="https://bithues.com/safety/crypto-scam-red-flag-checklist/">
+  <meta property="og:title" content="The Crypto Scam Red-Flag Checklist">
+  <meta property="og:description" content="A practical checklist for identifying crypto scams before you lose money. Works for DMs, investment offers, 'support' calls, and too-good-to-be-true claims.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bithues.com/safety/crypto-scam-red-flag-checklist/">
+  <meta property="og:image" content="https://bithues.com/og-image.jpg">
+  <meta name="author" content="Bithues Editorial">
+  <meta name="publish_date" content="2026-08-13">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       Bithues — visual system
+       Warm off-white paper, near-black ink, dark navy header, muted burnt-orange
+       accent. Source Serif 4 for display + Inter for body. Restraint over flash.
+       ========================================================================== */
+    :root {
+      /* color */
+      --paper:        #f6f1e7;        /* warm off-white page background */
+      --paper-warm:   #efe7d6;        /* slightly deeper for surfaces */
+      --ink:          #1a1814;        /* near-black body text */
+      --ink-soft:     #3a3530;        /* secondary text */
+      --ink-muted:    #6e6557;        /* metadata, dates */
+      --rule:         #d8cfba;        /* hairlines, borders */
+      --rule-soft:    #e6dfcd;        /* light dividers */
+      --ink-navy:     #1c2c4a;        /* dark navy header */
+      --ink-navy-2:   #14213d;        /* deeper navy, hover */
+      --accent:       #c8552b;        /* muted burnt-orange */
+      --accent-hover: #a64524;        /* deeper burnt-orange */
+      --accent-soft:  #f0d6c7;        /* accent for backgrounds */
+      --safety:       #1c2c4a;        /* safety desk block uses navy, not accent */
+      --code-bg:      #ece4d0;
+
+      /* type */
+      --serif: "Source Serif 4", "Source Serif Pro", "Charter", "Georgia", serif;
+      --sans:  "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --mono:  ui-monospace, "SF Mono", "Menlo", monospace;
+
+      /* layout */
+      --max-w: 1240px;
+      --max-w-prose: 720px;
+      --gutter: 1.5rem;
+      --radius: 4px;
+    }
+
+    /* base */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; padding: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+    a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+    ::selection { background: var(--accent-soft); color: var(--ink); }
+
+    /* header */
+    header.site-header {
+      background: var(--ink-navy);
+      color: #f1ece1;
+      border-bottom: 3px solid var(--accent);
+    }
+    .site-header-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 1rem var(--gutter);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .nav-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .nav-brand a {
+      color: #f1ece1;
+      border-bottom: none;
+    }
+    .nav-brand a:hover { color: #fff; }
+    .nav-brand .tag {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b8a98a;
+      margin-left: 0.5rem;
+      font-weight: 500;
+    }
+    nav.site-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav.site-nav a {
+      color: #d8cfb6;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid transparent;
+    }
+    nav.site-nav a:hover, nav.site-nav a.active {
+      color: #fff;
+      border-bottom-color: var(--accent);
+    }
+
+    /* main */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2.5rem var(--gutter);
+    }
+    main.narrow {
+      max-width: var(--max-w-prose);
+    }
+
+    /* article */
+    article.article-body {
+      background: var(--paper);
+      padding: 0;
+    }
+    article.article-body .article-header {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    article.article-body h1.article-title {
+      font-family: var(--serif);
+      font-size: 2.4rem;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: var(--ink);
+    }
+    article.article-body h2 {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      line-height: 1.25;
+      letter-spacing: -0.005em;
+      font-weight: 600;
+      margin: 2.5rem 0 0.75rem;
+      color: var(--ink);
+    }
+    article.article-body h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 1.75rem 0 0.5rem;
+      color: var(--ink);
+    }
+    article.article-body p {
+      margin: 0 0 1.1rem;
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      max-width: 65ch;
+    }
+    article.article-body ul, article.article-body ol {
+      padding-left: 1.4rem;
+      margin: 0 0 1.2rem;
+      max-width: 65ch;
+    }
+    article.article-body li {
+      margin-bottom: 0.4rem;
+      color: var(--ink-soft);
+    }
+    article.article-body code {
+      background: var(--code-bg);
+      padding: 0.12em 0.36em;
+      border-radius: 3px;
+      font-size: 0.9em;
+      font-family: var(--mono);
+    }
+    article.article-body pre {
+      background: var(--code-bg);
+      padding: 1rem;
+      border-radius: var(--radius);
+      overflow-x: auto;
+      margin: 0 0 1.5rem;
+    }
+    article.article-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: 0.5rem 1rem 0.5rem 1.25rem;
+      background: var(--accent-soft);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic;
+      color: var(--ink);
+    }
+    article.article-body strong { font-weight: 600; color: var(--ink); }
+    article.article-body hr {
+      border: none;
+      border-top: 1px solid var(--rule-soft);
+      margin: 2rem 0;
+    }
+
+    /* metadata strip */
+    .article-meta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: baseline;
+      color: var(--ink-muted);
+      font-size: 0.83rem;
+      font-family: var(--sans);
+      letter-spacing: 0.02em;
+    }
+    .article-meta .section-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+    }
+    .article-meta time {
+      font-variant-numeric: tabular-nums;
+    }
+    .article-meta .byline::before { content: "·"; padding: 0 0.5rem; color: var(--rule); }
+
+    /* ads */
+    .adslot {
+      margin: 2rem 0;
+      padding: 1rem;
+      background: var(--paper-warm);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      text-align: center;
+      color: var(--ink-muted);
+      font-size: 0.8rem;
+    }
+    .adslot .ad-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    /* related */
+    .related-links {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    .related-links h3 {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-muted);
+      margin: 0 0 1rem;
+      font-weight: 600;
+    }
+    .related-links ul { list-style: none; padding: 0; margin: 0; max-width: none; }
+    .related-links li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .related-links li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* footer */
+    footer.site-footer {
+      background: var(--paper-warm);
+      border-top: 1px solid var(--rule);
+      padding: 2.5rem var(--gutter) 2rem;
+      margin-top: 4rem;
+    }
+    .footer-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 720px) {
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+    .footer-brand {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1.15rem;
+      margin: 0 0 0.5rem;
+    }
+    .footer-brand a { color: var(--ink); border-bottom: none; }
+    .footer-brand a:hover { color: var(--accent); }
+    .footer-tagline {
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+      max-width: 38ch;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-muted);
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .footer-col li { margin-bottom: 0.4rem; }
+    .footer-col a {
+      color: var(--ink-soft);
+      font-size: 0.88rem;
+      border-bottom: none;
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-base {
+      max-width: var(--max-w);
+      margin: 2rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-base a { color: var(--ink-muted); border-bottom: 1px dotted var(--rule); }
+    .footer-base a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9312870448453345" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="nav-brand"><a href="/">Bithues<span class="tag">Digital asset intelligence</span></a></div>
+    <nav class="site-nav"><ul><li><a href="/guides/">Guides</a></li><li><a href="/safety/">Safety</a></li><li><a href="/research/">Research</a></li><li><a href="/tools/">Tools</a></li><li><a href="/paths/">Learn</a></li><li><a href="/about/">About</a></li></ul></nav>
+  </div>
+</header>
+<main class="narrow">
+  <div class="adslot">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-9312870448453345"
+    data-ad-slot="1216992329"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+</div>
+  <article class="article-body">
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="section-tag">SAFETY</span>
+        <time datetime="2026-08-13">August 13, 2026</time>
+        <span class="byline">Bithues Editorial</span>
+      </div>
+      <h1 class="article-title">The Crypto Scam Red-Flag Checklist</h1>
+    </div>
+    <h2>Before You Click, Send, or Sign — Run This Checklist</h2>
+<p>Use this checklist before any crypto transaction, investment decision, or when someone contacts you about your crypto. If any of these are true, stop and investigate.</p>
+<hr>
+<h3>🔴 Red Flag 1: Unsolicited Contact</h3>
+<p>Someone reached out to you — by phone, DM, email, or social media — about your crypto holdings, an "opportunity," or a "problem" with your account.</p>
+<p><strong>Why it's a red flag</strong>: Legitimate companies do not cold-contact customers about crypto problems. This is the starting point of nearly every crypto scam.</p>
+<p><strong>What to do</strong>: Hang up. Don't reply. If you think there might actually be a real issue with an account, navigate to the official site directly (bookmark) and check from there.</p>
+<hr>
+<h3>🔴 Red Flag 2: Urgency and Time Pressure</h3>
+<p>The message or caller tells you to act immediately or something terrible will happen: "Your wallet has been compromised — move funds now!" "This investment closes in 2 hours!"</p>
+<p><strong>Why it's a red flag</strong>: Scammers create urgency because a calm, rational person would investigate and discover the scam. Urgency shuts down your critical thinking.</p>
+<p><strong>What to do</strong>: There is no legitimate crypto opportunity or crisis that requires acting in the next 2 hours. Sleep on it. Discuss with someone you trust. The opportunity will still be there tomorrow — if it was real.</p>
+<hr>
+<h3>🔴 Red Flag 3: They Ask for Your Seed Phrase</h3>
+<p>Any person, website, or customer support agent who asks for your seed phrase, private key, or recovery words — for any reason.</p>
+<p><strong>Why it's a red flag</strong>: No legitimate service needs your seed phrase. Not for verification. Not for account recovery. Not for an upgrade. Not for any reason. Ever.</p>
+<p><strong>What to do</strong>: End the interaction immediately. Block the number or contact. You have been speaking with a scammer.</p>
+<hr>
+<h3>🔴 Red Flag 4: They Ask You to Move Funds to a "Safe Wallet"</h3>
+<p>Someone — often posing as support or a security team — tells you to move your crypto to a "secure wallet address" they provide.</p>
+<p><strong>Why it's a red flag</strong>: No legitimate organization will ever give you a wallet address and ask you to send funds there. This is the core of the "wallet drainer" attack in human form.</p>
+<p><strong>What to do</strong>: Delete the conversation. If you genuinely believe your wallet has been compromised, go to your official wallet app (the one you downloaded from the official site), disconnect any active connections, and move remaining funds to a fresh wallet address.</p>
+<hr>
+<h3>🔴 Red Flag 5: Guaranteed Returns</h3>
+<p>The investment offers a guaranteed return — "8% per month," "stable 3% weekly," "fully insured." No legitimate investment offers guaranteed returns. The phrase "guaranteed" in crypto investing is a certainty of fraud.</p>
+<p><strong>Why it's a red flag</strong>: All investments carry risk. Guaranteed returns require either fraud (Ponzi) or hidden risks you're not being shown. The crypto market's volatility makes guaranteed returns mathematically impossible for any legitimate actor.</p>
+<p><strong>What to do</strong>: Do not invest. Report the account/channel to the platform.</p>
+<hr>
+<h3>🔴 Red Flag 6: Free Money or Airdrop</h3>
+<p>You've been selected for a free crypto giveaway. Send a small amount to "verify your address" and receive double back. Claim an airdrop by connecting your wallet.</p>
+<p><strong>Why it's a red flag</strong>: No one gives away cryptocurrency for free. The "send a small amount to verify" trick is the most common crypto scam format. The "connect your wallet to claim" trick grants drainer contracts access to your tokens.</p>
+<p><strong>What to do</strong>: Delete the message. Never send crypto to claim crypto.</p>
+<hr>
+<h3>🔴 Red Flag 7: Romance Angle</h3>
+<p>Someone you've met online — a romantic connection — eventually mentions crypto they've been successful with, shows you impressive returns on their trading account, and suggests you should try it.</p>
+<p><strong>Why it's a red flag</strong>: The "romance crypto scam" (aka "pig butchering") is one of the highest-grossing scam categories in crypto. The relationship is real enough to build trust over weeks or months before the investment pitch. By the time you realize it's a scam, you've likely already invested.</p>
+<p><strong>What to do</strong>: Be deeply skeptical of any investment advice from someone you've never met in person. If your online romantic interest sends you a link to a trading platform and asks you to invest, you are being scammed.</p>
+<hr>
+<h3>🔴 Red Flag 8: Downloading Software from a Link</h3>
+<p>Someone sends you a link to download a crypto app, a "trading platform," or a "wallet" from somewhere other than the official app store or the official website.</p>
+<p><strong>Why it's a red flag</strong>: Fake apps are a common attack vector. Apple's App Store and Google's Play Store have both hosted fake crypto apps that steal funds. APK downloads from unofficial sources are even more dangerous.</p>
+<p><strong>What to do</strong>: Only download from official app stores or the official website. Verify the developer name before installing. Check reviews and download counts.</p>
+<hr>
+<h3>🔴 Red Flag 9: "Influencer" or "Celebrity" Endorsement</h3>
+<p>A famous person — Elon Musk, a popular YouTuber, a TikTok star — is personally giving away cryptocurrency or endorsing a specific token, platform, or investment.</p>
+<p><strong>Why it's a red flag</strong>: Legitimate endorsements are not done via random social media accounts. Fake celebrity accounts are ubiquitous. Deepfake video and audio are now common in these scams.</p>
+<p><strong>What to do</strong>: Verify the account is actually the celebrity's official account. Even then, be deeply skeptical — legitimate celebrities have been tricked into promoting scams they didn't know were scams.</p>
+<hr>
+<h3>🔴 Red Flag 10: Off-Platform Communication</h3>
+<p>A platform's support or an investment opportunity starts on a legitimate platform (Twitter, Instagram, dating apps) but quickly moves to WhatsApp, Telegram, or Signal.</p>
+<p><strong>Why it's a red flag</strong>: Scammers move off-platform because they can't be reported to the original platform, and the conversation is harder to audit. This is a near-certain indicator of a scam.</p>
+<p><strong>What to do</strong>: Never move significant conversations off-platform. Legitimate businesses have support channels on their official websites.</p>
+<hr>
+<h2>The Three Rules</h2>
+<p>If you remember nothing else from this checklist, remember three rules:</p>
+<ol>
+<li><strong>No one legitimate ever needs your seed phrase.</strong> Not support. Not security. Not verification. No one.</li>
+<li><strong>No legitimate opportunity requires urgency.</strong> If it's real, you can sleep on it.</li>
+<li><strong>If it sounds too good to be true, it is.</strong> There is no free crypto. There is no guaranteed return.</li>
+</ol>
+<hr>
+<h2>If You've Been Scammed</h2>
+<ol>
+<li><strong>Act immediately.</strong> If the transaction is still pending, you may be able to stop it — contact the exchange you're sending from and ask about a wire recall.</li>
+<li><strong>Report to the platform</strong> where the scammer contacted you.</li>
+<li><strong>Report to the FBI IC3</strong> at ic3.gov — crypto theft is a federal crime.</li>
+<li><strong>Report to the FTC</strong> at reportfraud.ftc.gov.</li>
+<li><strong>Do not engage with recovery scams.</strong> People who claim to be hackers who can get your money back are running a second scam.</li>
+</ol>
+<h2>Related</h2>
+<ul>
+<li>[How Wallet Drainers Work](/guides/how-wallet-drainers-work/)</li>
+<li>[What Happens When a Crypto Exchange Fails](/safety/what-happens-crypto-exchange-fails/)</li>
+</ul>
+    <div class="related-links path-links"><h3>Part of these paths</h3><ul><li><a href="/paths/avoiding-scams/">Part of the path: Avoiding Scams: The Defense Playbook</a></li></ul></div>
+  </article>
+  <div class="adslot">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-9312870448453345"
+    data-ad-slot="1216992329"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand"><a href="/">Bithues</a></p>
+      <p class="footer-tagline">Explains what can go wrong before you put money or keys at risk.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/safety/">Safety Desk</a></li>
+        <li><a href="/research/">Research Briefs</a></li>
+        <li><a href="/glossary/">Glossary</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="/paths/">Learning paths</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="/about/">About Bithues</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/disclaimer/">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>&copy; 2026 Bithues. All rights reserved.</span>
+    <span>Content is educational and is not financial advice.</span>
+  </div>
+</footer>
+</body>
+</html>
