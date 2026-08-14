@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Daily Brief: August 13, 2026 — Crypto Safety News</title>
-  <meta name="description" content="If you read one story today, read the Blockaid point: &quot;private-key compromise is the original sin of crypto.&quot; The day’s feed is dominated by a single…">
+  <title>The Daily Brief: August 13, 2026 — Private-Key Failures Are Still Crypto's Core Weakness</title>
+  <meta name="description" content="The dominant pattern of the day is not any single loss — it is the persistence of the same custody-failure channels at scale. Three incidents in 24 hours…">
   <link rel="canonical" href="https://bithues.com/newsletter/2026-08-13/">
-  <meta property="og:title" content="The Daily Brief: August 13, 2026 — Crypto Safety News">
-  <meta property="og:description" content="If you read one story today, read the Blockaid point: &quot;private-key compromise is the original sin of crypto.&quot; The day’s feed is dominated by a single…">
+  <meta property="og:title" content="The Daily Brief: August 13, 2026 — Private-Key Failures Are Still Crypto's Core Weakness">
+  <meta property="og:description" content="The dominant pattern of the day is not any single loss — it is the persistence of the same custody-failure channels at scale. Three incidents in 24 hours…">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://bithues.com/newsletter/2026-08-13/">
   <meta property="og:image" content="https://bithues.com/og-image.jpg">
@@ -506,10 +506,10 @@
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  "headline": "The Daily Brief: August 13, 2026 \u2014 Crypto Safety News",
+  "headline": "The Daily Brief: August 13, 2026 \u2014 Private-Key Failures Are Still Crypto's Core Weakness",
   "datePublished": "2026-08-13",
   "dateModified": "2026-08-13",
-  "description": "If you read one story today, read the Blockaid point: &quot;private-key compromise is the original sin of crypto.&quot; The day\u2019s feed is dominated by a single\u2026",
+  "description": "The dominant pattern of the day is not any single loss \u2014 it is the persistence of the same custody-failure channels at scale. Three incidents in 24 hours\u2026",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://bithues.com/newsletter/2026-08-13/"
@@ -528,7 +528,7 @@
     }
   },
   "image": "https://bithues.com/og-image.jpg",
-  "articleBody": "If you read one story today, read the Blockaid point: \"private-key compromise is the original sin of crypto.\" The day\u2019s feed is dominated by a single thread \u2014 private-key leakage \u2014 and the related knock-on effects across cold storage, phishing, and stablecoin depegs. Start with the Coldcard cluster: the bug in how the device generated seed phrases drained roughly 1,816 BTC (~$116M) over a seven-day window in late July, and adversaries are still moving the funds. Trezor\u2019s warning about rising phishing attempts is the natural sequel \u2014 anyone who held a Coldcard in the affected window is now a higher-value target for fake \"security update\" emails and malicious firmware pages. The address-poisoning stories (the $100K USDT slice, the $26M whale) are a different mechanism but a related lesson: even when the private key is not breached, the *display* of the recipient can be poisoned to redirect funds. Together, three losses in 24 hours span the three main ways custody actually fails in 2026 \u2014 device bug, phishing, and lookalike addresses. The Coreum XRPL bridge exploit ($200K) is a smaller reminder that smart-contract deposit-verification flaws remain a live attack surface, even on chains marketed as \u201cfast and cheap.\u201d None of this is novel on a technical level; what is new is the volume. The year-to-date total across the tracked incidents now sits north of $1.2B across 276 hacks, with the second half of the year still ahead. The mitigations we\u2019ve written about before \u2014 verify recipient addresses on a hardware wallet\u2019s screen, refuse to type seed phrases anywhere, treat firmware updates as high-trust events \u2014 are the same mitigations, but the urgency is higher. The pattern: defense-in-depth behavior is the only defense that scales against attackers who have already accepted that the cost of trying is going down."
+  "articleBody": "The dominant pattern of the day is not any single loss \u2014 it is the persistence of the same custody-failure channels at scale. Three incidents in 24 hours each took a different path (a device bug, an approval-phishing drain, an address-poisoning sweep) and each targeted a different layer of the custody stack. What binds them is the attacker economy: the cost of trying has collapsed, the value of probing the seams has not, and the seams keep being the same. The H1 2026 data \u2014 roughly three-quarters of all losses traced to private-key compromise \u2014 is the long-form version of today's short-form story."
 }
   </script>
 </head>
@@ -556,90 +556,152 @@
         <time datetime="2026-08-13">August 13, 2026</time>
         <span class="byline">Bithues Editorial</span>
       </div>
-      <h1 class="article-title">The Daily Brief: August 13, 2026 — Crypto Safety News</h1>
+      <h1 class="article-title">The Daily Brief: August 13, 2026 — Private-Key Failures Are Still Crypto's Core Weakness</h1>
     </div>
-    <section class="morning-brief"><h2>The morning brief</h2><p>If you read one story today, read the Blockaid point: &quot;private-key compromise is the original sin of crypto.&quot; The day’s feed is dominated by a single thread — private-key leakage — and the related knock-on effects across cold storage, phishing, and stablecoin depegs. Start with the Coldcard cluster: the bug in how the device generated seed phrases drained roughly 1,816 BTC (~$116M) over a seven-day window in late July, and adversaries are still moving the funds. Trezor’s warning about rising phishing attempts is the natural sequel — anyone who held a Coldcard in the affected window is now a higher-value target for fake &quot;security update&quot; emails and malicious firmware pages. The address-poisoning stories (the $100K USDT slice, the $26M whale) are a different mechanism but a related lesson: even when the private key is not breached, the *display* of the recipient can be poisoned to redirect funds. Together, three losses in 24 hours span the three main ways custody actually fails in 2026 — device bug, phishing, and lookalike addresses. The Coreum XRPL bridge exploit ($200K) is a smaller reminder that smart-contract deposit-verification flaws remain a live attack surface, even on chains marketed as “fast and cheap.” None of this is novel on a technical level; what is new is the volume. The year-to-date total across the tracked incidents now sits north of $1.2B across 276 hacks, with the second half of the year still ahead. The mitigations we’ve written about before — verify recipient addresses on a hardware wallet’s screen, refuse to type seed phrases anywhere, treat firmware updates as high-trust events — are the same mitigations, but the urgency is higher. The pattern: defense-in-depth behavior is the only defense that scales against attackers who have already accepted that the cost of trying is going down.</p></section>
-<section class="brief-items">
-  <h2>Today&#8217;s items (15)</h2>
-  <article class="brief-item">
-  <h3><a href="https://techcrunch.com/2026/08/04/hackers-steal-over-130-million-by-exploiting-bug-in-offline-hardware-wallets/" rel="noopener">Hackers steal over $130M by exploiting bug in offline hardware wallets | TechCrunch</a></h3>
-  <blockquote class="editor-note">The headline number ($130M) is the campaign-level total; the device-level bug is in the seed-phrase generation routine, which is a fundamentally different failure mode than a phishing attack. Wallets generated on a Coldcard during the affected window should be considered compromised even if the funds have not moved.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · techcrunch.com</span> This is considered a “cold” wallet, as opposed to “hot” wallets that are online, such as those in apps, browser extensions, and accounts on commercial crypto exchanges like Binance or Coinbase. As it turns out, hackers figured out that there was a flaw in how Coldcard wallets generated users’ seed p</p>
+    <header class="brief-headline"><p class="brief-eyebrow">The Daily Brief · August 13, 2026</p><h2 class="brief-headline-title">Private-Key Failures Are Still Crypto&#x27;s Core Weakness</h2><p class="brief-dek">Three custody incidents in 24 hours, each probing a different layer of the stack.</p></header>
+<section class="brief-signal"><h2>Today&#8217;s signal</h2><p>The dominant pattern of the day is not any single loss — it is the persistence of the same custody-failure channels at scale. Three incidents in 24 hours each took a different path (a device bug, an approval-phishing drain, an address-poisoning sweep) and each targeted a different layer of the custody stack. What binds them is the attacker economy: the cost of trying has collapsed, the value of probing the seams has not, and the seams keep being the same. The H1 2026 data — roughly three-quarters of all losses traced to private-key compromise — is the long-form version of today&#x27;s short-form story.</p></section>
+<section class="brief-why"><h2>Why it matters</h2><ul><li>Private-key and seed-phrase failures accounted for the majority of H1 2026 losses, and the day-to-day incidents still cluster along those channels. Defense-in-depth behavior is the only defense that scales against attackers whose cost of trying is going down.</li>
+<li>Hardware wallets are not magic: they are a generation step, a screen, and a workflow. Each of those has now been attacked at scale in 2026.</li>
+<li>Address poisoning and approval abuse do not require breaking your key at all — they exploit the <em>interface</em> you use to authorize transactions. Your security depends on the UI as much as the cryptography.</li>
+<li>Stablecoins are pegged instruments, not cash equivalents. A 30-second depeg is enough to trigger liquidations, halt withdrawals, or break a treasury flow that assumed continuity.</li>
+</ul></section>
+<section class="brief-todo"><h2>What to do today</h2><ul><li><strong>Verify on-device, every time.</strong> Match the full recipient address on your hardware wallet&#x27;s screen before signing anything above trivial amounts. Matching the first/last four characters is no longer sufficient.</li>
+<li><strong>Revoke stale approvals.</strong> Go to revoke.cx or your wallet&#x27;s approval manager and revoke every unlimited token approval older than 30 days, especially on wallets that ever touched DeFi.</li>
+<li><strong>Treat firmware updates as high-trust events.</strong> Apply only via the vendor&#x27;s official site, verify the publisher signature, and assume that any &quot;urgent security update&quot; pushed to your inbox first is a phishing attempt.</li>
+<li><strong>Audit your stablecoin exposure</strong> by issuer, chain, exchange, and redemption window. If any of the four is a single point, break it.</li>
+<li><strong>If you generated a Coldcard seed between July 24 and 31, 2026,</strong> treat that wallet as compromised. Move funds to a new seed on a different device or vendor — never to a new wallet on the same compromised device.</li>
+</ul></section>
+<section class="brief-developments"><h2>Key developments</h2><article class="brief-development">
+  <header class="dev-header">
+    <h3 class="dev-title"><a href="https://fortune.com/2026/08/03/bitcoin-owners-rocked-116-million-hack-coldcard-coinkite-exploit/" rel="noopener">The Coldcard seed-phrase bug drained $116M — and the funds are still moving</a></h3>
+    <span class="dev-severity">Critical</span>
+  </header>
+  <dl class="dev-fields">
+    <dt>What happened</dt><dd>Fortune&#x27;s on-chain analysis puts 1,816 BTC off the affected addresses; Coinkite shipped a firmware patch but cannot recall devices already in the field. The attack worked because the generation routine shipped a flawed entropy source for a seven-day window in late July.</dd>
+    <dt>Why it matters</dt><dd>Cold storage is the baseline of self-custody; a seed-phrase generation bug at the device level invalidates the entire category for the affected cohort.</dd>
+    <dt>Reader implication</dt><dd>Wallets generated on a Coldcard during the late-July window should be treated as compromised — move funds to a new seed on a different device or vendor and never type the original seed anywhere it can be logged.</dd>
+  </dl>
+  <ul class="tag-list"><li>firmware risk</li><li>seed-phrase exposure</li><li>private-key compromise</li></ul>
+  <ul class="source-list"><li><span class="source-label">Source · fortune.com</span> <a href="https://fortune.com/2026/08/03/bitcoin-owners-rocked-116-million-hack-coldcard-coinkite-exploit/" rel="noopener">https://fortune.com/2026/08/03/bitcoin-owners-rocked-116-million-hack-coldcard-coinkite-exploit/</a></li></ul>
 </article>
-<article class="brief-item">
-  <h3><a href="https://www.forbes.com/sites/davidbirnbaum/2026/08/11/is-bitcoin-self-custody-dead-inside-the-coldcard-hack/" rel="noopener">Is Bitcoin Self-Custody Dead? Inside The Coldcard Hack</a></h3>
-  <blockquote class="editor-note">The Forbes piece is the long-form companion to the TechCrunch story. It focuses on the industry reaction — the question of whether “cold storage” is still a meaningful category if the device generation step can be backdoored. Worth reading for the analyst quotes on the supply-chain attack surface.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · forbes.com</span> On July 30th, attackers began draining bitcoin from addresses linked to seeds generated by compromised “cold storage” wallets. The devices, called Coldcards, were manufactured by Coinkite, and were widely viewed as the best choice for those who are paranoid in the extreme about cybersecurity.</p>
+<article class="brief-development">
+  <header class="dev-header">
+    <h3 class="dev-title"><a href="https://theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160" rel="noopener">Blockaid: private-key compromise is the &quot;original sin&quot; — and it explains 75% of H1 2026 losses</a></h3>
+    <span class="dev-severity">Structural</span>
+  </header>
+  <dl class="dev-fields">
+    <dt>What happened</dt><dd>TheBlock&#x27;s interview with Blockaid CEO Ido Wollenstein frames the year&#x27;s data: roughly three-quarters of all H1 2026 losses trace back to a private-key or seed-phrase failure, not a smart-contract bug. Forbes adds the industry perspective.</dd>
+    <dt>Why it matters</dt><dd>The single statistic that explains the year — and the single mitigation that explains the gap (verify on-device, never type seeds, treat firmware as high-trust).</dd>
+    <dt>Reader implication</dt><dd>Rank your own threat model by the same denominator: which of your custody layers depends on a single device, a single seed, a single approval flow?</dd>
+  </dl>
+  <ul class="tag-list"><li>private-key compromise</li><li>operational security</li><li>seed-phrase exposure</li></ul>
+  <ul class="source-list"><li><span class="source-label">Source · theblock.co</span> <a href="https://theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160" rel="noopener">https://theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160</a></li><li><span class="source-label">Confirming · forbes.com</span> <a href="https://www.forbes.com/sites/davidbirnbaum/2026/08/11/is-bitcoin-self-custody-dead-inside-the-coldcard-hack/" rel="noopener">https://www.forbes.com/sites/davidbirnbaum/2026/08/11/is-bitcoin-self-custody-dead-inside-the-coldcard-hack/</a></li></ul>
 </article>
-<article class="brief-item">
-  <h3><a href="https://www.tronweekly.com/trezor-warns-of-rising-phishing-attempts/" rel="noopener">Trezor Warns Of Rising Phishing Attempts Amid Coldcard Hack 2026</a></h3>
-  <blockquote class="editor-note">Trezor is using the Coldcard incident as a launching pad for a phishing warning — which is the right call. The threat model for anyone who held a Coldcard in the affected window now includes impersonator emails, fake Trezor Suite downloads, and phony firmware update pages.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · tronweekly.com</span> LATEST: 🚨 Trezor says it is ... 5, 2026 · Trezor’s alert is consistent with the industry recommendations which state that seed phrases should never be typed on the Web, and that firmware updates should be installed only via official channels....</p>
+<article class="brief-development">
+  <header class="dev-header">
+    <h3 class="dev-title"><a href="https://en.coin-turk.com/phishing-attack-drains-25-6-million-from-crypto-whale-second-loss-tied-to-same-wallet/" rel="noopener">A $25.6M whale loss and a $100K USDT loss show two flavors of approval-and-display attack</a></h3>
+    <span class="dev-severity">High</span>
+  </header>
+  <dl class="dev-fields">
+    <dt>What happened</dt><dd>The whale&#x27;s wallet was drained after signing a malicious token approval — the same address was hit in 2023 for $24.2M, suggesting it stays on a permanent target list. The $100K USDT case is address poisoning: a 66-day-old dust transaction primed the recipient display, then a lookalike address swept the next transfer.</dd>
+    <dt>Why it matters</dt><dd>Both losses avoided private-key compromise entirely. The mitigations are different per mechanism — approval-revocation is the cure for the first; matching the *full* address on the hardware screen before signing is the cure for the second.</dd>
+    <dt>Reader implication</dt><dd>Run a stale-approval audit today (revoke.cx or your wallet&#x27;s approval manager) and stop sending to addresses from your transaction history without verifying each one on-device.</dd>
+  </dl>
+  <ul class="tag-list"><li>approval abuse</li><li>address poisoning</li><li>wallet hygiene</li></ul>
+  <ul class="source-list"><li><span class="source-label">Source · en.coin-turk.com</span> <a href="https://en.coin-turk.com/phishing-attack-drains-25-6-million-from-crypto-whale-second-loss-tied-to-same-wallet/" rel="noopener">https://en.coin-turk.com/phishing-attack-drains-25-6-million-from-crypto-whale-second-loss-tied-to-same-wallet/</a></li><li><span class="source-label">Confirming · crypto.news</span> <a href="https://crypto.news/address-poisoning-attacks-drains-100k-dollars-usdt/" rel="noopener">https://crypto.news/address-poisoning-attacks-drains-100k-dollars-usdt/</a></li></ul>
 </article>
-<article class="brief-item">
-  <h3><a href="https://coinspectator.com/cryptonews/2026/08/09/what-happens-when-a-stablecoin-depegs-for-30-seconds/" rel="noopener">What happens when a stablecoin depegs for 30 seconds – CoinSpectator – Real-time Cryptocurrency News</a></h3>
-  <blockquote class="editor-note">Most retail users do not realize how fast a depeg can happen. The 30-second window is the practical reason exchanges need to handle liquidations carefully — and why the next iteration of risk controls will likely include depeg-buffer timeouts.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · coinspectator.com</span> Most traders assume depegs are slow. They are not. Inside the 30 second window where arbitrage bots, liquidation cascades, and oracle lag collide to turn a mino</p>
+<article class="brief-development">
+  <header class="dev-header">
+    <h3 class="dev-title"><a href="https://coinspectator.com/cryptonews/2026/08/09/what-happens-when-a-stablecoin-depegs-for-30-seconds/" rel="noopener">Stablecoins can depeg for 30 seconds — and that is long enough to wipe out leveraged positions</a></h3>
+    <span class="dev-severity">Structural</span>
+  </header>
+  <dl class="dev-fields">
+    <dt>What happened</dt><dd>CoinSpectator walks through the mechanics of last weekend&#x27;s flash depeg: arbitrage bots, liquidation cascades, and oracle-price lag collided inside a half-minute window. The structural lesson is that retail assumes depegs are slow. They are not.</dd>
+    <dt>Why it matters</dt><dd>Stablecoin &quot;stability&quot; is a property of normal markets, not stress markets. If your trading, payments, or treasury flow assumes a peg holds across seconds, you are not actually holding a stablecoin.</dd>
+    <dt>Reader implication</dt><dd>Review whether your stablecoin exposure depends on a single issuer, a single chain, a single exchange, or a single redemption window. If any of those four are concentrated, the 30-second depeg is your tail risk.</dd>
+  </dl>
+  <ul class="tag-list"><li>stablecoin risk</li><li>settlement risk</li><li>liquidity access</li></ul>
+  <ul class="source-list"><li><span class="source-label">Source · coinspectator.com</span> <a href="https://coinspectator.com/cryptonews/2026/08/09/what-happens-when-a-stablecoin-depegs-for-30-seconds/" rel="noopener">https://coinspectator.com/cryptonews/2026/08/09/what-happens-when-a-stablecoin-depegs-for-30-seconds/</a></li></ul>
 </article>
-<article class="brief-item">
-  <h3><a href="https://www.btcc.com/en-US/caacademy/crypto-wiki/altcoin" rel="noopener">What Is USD1 Stablecoin? A Beginner&#x27;s Guide to World Liberty Financial in 2026</a></h3>
-  <blockquote class="editor-note">USD1 is the new entrant in the dollar-pegged stablecoin category. The BitGo custody arrangement is the technical detail that matters most — BitGo is the regulated trust company that holds the reserves, which is the closest thing to a “real” backing in this category.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · btcc.com</span> USD1 is a dollar-pegged stablecoin launched by World Liberty Financial in 2025 and designed to maintain a value of around US$1. BitGo issues USD1, while World Liberty Financial and affiliated entities own the USD1 brand and provide related services. USD1 is backed by reserve assets including U.S. do</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160?amp=" rel="noopener">Coldcard bitcoin exploit exposes crypto&#x27;s &#x27;original sin&#x27; of private keys, Blockaid CEO says | The Block</a></h3>
-  <blockquote class="editor-note">The “original sin” framing is the cleanest articulation yet of why private-key leakage is the dominant attack vector. The Blockaid data — 75% of H1 2026 losses from private-key compromises — is the line that should anchor any custody decision.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · theblock.co</span> Blockaid said in its most recent report that nearly 75% of the funds lost to crypto exploits during the first half of 2026 resulted from private-key compromises.</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://fortune.com/2026/08/03/bitcoin-owners-rocked-116-million-hack-coldcard-coinkite-exploit/" rel="noopener">Bitcoin owners rocked by $116 million hack: What we know about the Coldcard exploit | Fortune</a></h3>
-  <blockquote class="editor-note">The Galaxy Research on-chain analysis is the most useful detail in the Fortune piece — 1,816 BTC moved off the affected addresses, which gives a hard lower bound on the loss. The update timeline suggests the attackers had access to the seed phrases for at least a week before the first drain.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · fortune.com</span> An on-chain analysis by blockchain intelligence firm Galaxy Research revealed that the hackers have already moved approximately 1,816 Bitcoin, worth nearly $116 million, off those wallets.</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://en.coinotag.com/bitcoin-crypto-hack-1-2-billion-276-exploits-2026" rel="noopener">Bitcoin at Center of $1.2 Billion Crypto Hack Wave Spanning 276 Exploits - COINOTAG</a></h3>
-  <blockquote class="editor-note">276 hacks in 2026 is the cumulative denominator. The fact that losses are spread across BTC, ERC-20, and bridge exploits tells you the attack surface is broad — there is no single vector to defend against.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · en.coinotag.com</span> REKT data shows 276 crypto hacks totaling $1.2B in 2026. Coldcard exploit drains 1,719 BTC, BTCPay patches critical flaw, Binance sues RedotPay for $472.8M.</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://en.coin-turk.com/phishing-attack-drains-25-6-million-from-crypto-whale-second-loss-tied-to-same-wallet/" rel="noopener">Phishing attack drains $25.6 million from crypto whale, second loss tied to same wallet</a></h3>
-  <blockquote class="editor-note">The same address was hit in September 2023 and again this week — a $24.2M loss then, $25.6M now. The pattern is approval-phishing: a malicious token approval that lets the attacker drain any token in the wallet. Approvals should be limited by spend cap and revoked proactively.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · en.coin-turk.com</span> In September 2023, the same address fell victim to a phishing exploit facilitated by malicious token approvals, according to analyst Specter. That breach resulted in the loss of $24.2 million, including 4,851 Rocket Pool ETH and 9,579.2 Lido ...</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://crypto.news/address-poisoning-attacks-drains-100k-dollars-usdt/" rel="noopener">Address poisoning attack drains $100K USDT</a></h3>
-  <blockquote class="editor-note">The 0.005 USDT dust transaction is the giveaway — any address in your history that has sent you a tiny amount that you did not request is a poisoned-address candidate. The fix is to verify the full address on a hardware wallet’s screen, not match the first/last four characters.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · crypto.news</span> An attacker then inserted a fraudulent address into the history with a 0.005 USDT dust transaction, after which the victim mistakenly sent 49,999,950 USDT to the poisoned address.</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://cryptonews.net/news/security/33282272/" rel="noopener">Address poisoning attack drains $100K USDT</a></h3>
-  <blockquote class="editor-note">This is the second report of the same $100K USDT loss — independent confirmation with the 66-day gap between the dust transaction and the drain. The behavioral pattern is now: send dust → wait months → exploit when the victim is in a hurry.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · cryptonews.net</span> A crypto user has lost approximately 100,000 $USDT after transferring the funds to a lookalike wallet address planted in the victim’s transaction history 66 days earlier. Cyvers Alerts reported on Aug. 11 that its monitoring system detected the loss after the victim sent funds to an address controll</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://en.wikipedia.org/wiki/Public-key_cryptography" rel="noopener">Public-key cryptography - Wikipedia</a></h3>
-  <blockquote class="editor-note">The Wikipedia refresher is the canonical reference for the underlying cryptography. The side-channel attack mention is the operational point — even mathematically secure schemes can be defeated by implementations that leak information through timing, power, or EM emissions.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · en.wikipedia.org</span> The &amp;quot;knapsack packing&amp;quot; algorithm was found to be insecure after the development of a new attack. As with all cryptographic functions, public-key implementations may be vulnerable to side-channel attacks that exploit information leakage to simplify the search for a secret key.</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://cryptopotato.com/crypto-whale-loses-26m-after-apparent-private-key-compromise/" rel="noopener">Crypto Whale Loses $26M After Apparent Private Key Compromise</a></h3>
-  <blockquote class="editor-note">The TLBL-linked wallet suggests a single-entity treasury provider. The “private-key compromise” framing is the third such incident in the day’s feed — the convergence is the actual story, not the individual amounts.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · cryptopotato.com</span> The slight difference between the figures from Lookonchain and PeckShield comes from the asset valuations included in their respective tracking. Both accounts, however, point to the same broad event — a large TLBL-linked wallet was drained, with private-key compromise identified as the apparent caus</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://blog.blockmagnates.com/the-contract-is-no-longer-the-whole-attack-surface-8c44cc4311cd?gi=55da32923197" rel="noopener">Fryday #3: The Contract Is No Longer the Whole Attack Surface | by Aleksandr Korolev | Aug, 2026 | Block Magnates</a></h3>
-  <blockquote class="editor-note">TRM Labs&#x27; H1 2026 count (207 hacks, ~$972M) is the cleanest year-over-year comparison in the day’s feed. The “incidents more than doubled, dollars are down” pattern is the deeper signal — attackers are optimizing for higher-frequency, lower-payout exploits.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · blog.blockmagnates.com</span> TRM Labs recorded 207 crypto hacks and approximately $972 million stolen in H1 2026, compared with 83 incidents and about $2.3 billion in H1 2025. The number of incidents more than doubled while total losses fell because 2025 contained unusually ...</p>
-</article>
-<article class="brief-item">
-  <h3><a href="https://smartcontractshacking.com/hacks/coreum-hack-2026" rel="noopener">Coreum Hack (2026) - $200K Lost | Smart Contract Hacking</a></h3>
-  <blockquote class="editor-note">The Coreum-XRPL bridge deposit-verification flaw is a useful contrast to the day’s private-key stories — same outcome (loss of funds), different mechanism (logic bug in the bridge relay). The 97-minute window from exploit to drain is the operational signal.</blockquote>
-  <p class="source-excerpt"><span class="source-label">Source · smartcontractshacking.com</span> On August 9, 2026, the Coreum cross-chain bridge connecting to the XRP Ledger (XRPL) was exploited due to a deposit verification flaw, resulting in the theft of 199,916 XRP (valued at approximately $200,000) across 94 transactions within 97 minutes.</p>
-</article>
-
 </section>
-<section class="related-reading"><h2>Related reading</h2><ul><li><a href="/guides/crypto-safety-2026-threats-that-matter/">Crypto Safety in 2026: Threats That Actually Matter</a><span class="related-dek"> — The full guide to the threat landscape — what we watch, what we ignore, and why.</span></li><li><a href="/guides/seed-phrases-what-they-are-and-how-people-lose-them/">Seed Phrases: What They Are and How People Lose Them</a><span class="related-dek"> — Why seed-phrase handling is the dominant variable in whether you keep your funds.</span></li><li><a href="/guides/cold-wallet-vs-hot-wallet/">Cold Wallet vs. Hot Wallet: A Decision Framework</a><span class="related-dek"> — How to think about the trade-off without the marketing.</span></li><li><a href="/paths/avoiding-scams/">Avoiding Scams: The Defense Playbook</a><span class="related-dek"> — A 5-step path through the most common scams and how to spot them.</span></li></ul></section>
-<p class="brief-footer"><em>The Daily Brief is published by the Bithues Editorial desk. Items are sourced from public reporting; inclusion is not an endorsement. Nothing here is financial, investment, or legal advice.</em></p>
+<section class="brief-raw"><h2>Raw pipeline (15)</h2><p class="pipeline-note">The link-discovery pipeline collected these items; the desk selected the strongest above. Editor&#8217;s notes and editorial disposition below.</p><article class="brief-item raw-item">
+  <h4><a href="https://techcrunch.com/2026/08/04/hackers-steal-over-130-million-by-exploiting-bug-in-offline-hardware-wallets/" rel="noopener">Hackers steal over $130M by exploiting bug in offline hardware wallets | TechCrunch</a> <span class="source-domain">techcrunch.com</span></h4>
+  <blockquote class="editor-note">The headline number ($130M) is the campaign-level total; the device-level bug is in the seed-phrase generation routine, which is a fundamentally different failure mode than a phishing attack. Wallets generated on a Coldcard during the affected window should be considered compromised even if the funds have not moved. *Subsumed into the Fortune-sourced Key development above.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://www.forbes.com/sites/davidbirnbaum/2026/08/11/is-bitcoin-self-custody-dead-inside-the-coldcard-hack/" rel="noopener">Is Bitcoin Self-Custody Dead? Inside The Coldcard Hack | Forbes</a> <span class="source-domain">forbes.com</span></h4>
+  <blockquote class="editor-note">The Forbes piece is the long-form companion to the TechCrunch story. It focuses on the industry reaction — whether &quot;cold storage&quot; is still a meaningful category if the device generation step can be backdoored. *Confirming source for the Blockaid &quot;original sin&quot; Key development.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://www.tronweekly.com/trezor-warns-of-rising-phishing-attempts/" rel="noopener">Trezor Warns Of Rising Phishing Attempts Amid Coldcard Hack 2026 | TronWeekly</a> <span class="source-domain">tronweekly.com</span></h4>
+  <blockquote class="editor-note">Trezor is using the Coldcard incident as a launching pad for a phishing warning — which is the right call. The threat model for anyone who held a Coldcard in the affected window now includes impersonator emails, fake Trezor Suite downloads, and phony firmware update pages. *Editor framing absorbed into the Today&#x27;s signal paragraph.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://coinspectator.com/cryptonews/2026/08/09/what-happens-when-a-stablecoin-depegs-for-30-seconds/" rel="noopener">What happens when a stablecoin depegs for 30 seconds | CoinSpectator</a> <span class="source-domain">coinspectator.com</span></h4>
+  <blockquote class="editor-note">Most retail users do not realize how fast a depeg can happen. The 30-second window is the practical reason exchanges need to handle liquidations carefully — and why the next iteration of risk controls will likely include depeg-buffer timeouts. *Anchors the stablecoin Key development.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://www.btcc.com/en-US/caacademy/crypto-wiki/altcoin" rel="noopener">What Is USD1 Stablecoin? A Beginner&#x27;s Guide | BTCC</a> <span class="source-domain">btcc.com</span></h4>
+  <blockquote class="editor-note">USD1 is the new entrant in the dollar-pegged stablecoin category. *Below the editorial bar for today&#x27;s brief — generic primer, not a new development.* Dropped from the Key developments.</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160" rel="noopener">Coldcard bitcoin exploit exposes crypto&#x27;s &#x27;original sin&#x27; of private keys | TheBlock</a> <span class="source-domain">theblock.co</span></h4>
+  <blockquote class="editor-note">The &quot;original sin&quot; framing is the cleanest articulation yet of why private-key leakage is the dominant attack vector. The Blockaid data — 75% of H1 2026 losses from private-key compromise — is the headline statistic. *Anchors the Blockaid Key development.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://fortune.com/2026/08/03/bitcoin-owners-rocked-116-million-hack-coldcard-coinkite-exploit/" rel="noopener">Bitcoin owners rocked by $116 million hack: What we know about the Coldcard exploit | Fortune</a> <span class="source-domain">fortune.com</span></h4>
+  <blockquote class="editor-note">The Galaxy Research on-chain analysis is the most useful detail in the Fortune piece — 1,816 BTC moved off the affected addresses, which gives a hard lower bound on the loss. *Primary source for the Coldcard Key development.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://en.coinotag.com/bitcoin-crypto-hack-1-2-billion-276-exploits-2026" rel="noopener">Bitcoin at Center of $1.2 Billion Crypto Hack Wave Spanning 276 Exploits | CoinotaG</a> <span class="source-domain">en.coinotag.com</span></h4>
+  <blockquote class="editor-note">276 hacks in 2026 is the cumulative denominator. *Secondary stat folded into Today&#x27;s signal paragraph; dropped from Key developments.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://en.coin-turk.com/phishing-attack-drains-25-6-million-from-crypto-whale-second-loss-tied-to-same-wallet/" rel="noopener">Phishing attack drains $25.6 million from crypto whale | Coin-Turk</a> <span class="source-domain">en.coin-turk.com</span></h4>
+  <blockquote class="editor-note">The same address was hit in September 2023 and again this week — a $24.2M loss then, $25.6M now. The pattern is approval-phishing: a malicious token approval that lets the attacker drain later. *Primary source for the approval-poisoning Key development.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://crypto.news/address-poisoning-attacks-drains-100k-dollars-usdt/" rel="noopener">Address poisoning attack drains $100K USDT | crypto.news</a> <span class="source-domain">crypto.news</span></h4>
+  <blockquote class="editor-note">The 0.005 USDT dust transaction is the giveaway — any address in your history that has sent you a tiny amount that you did not request is a poisoned-address candidate. The fix is to verify the full address on-device before signing. *Confirming source for the address-poisoning Key development.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://cryptonews.net/news/security/33282272/" rel="noopener">Address poisoning attack drains $100K USDT | cryptonews.net</a> <span class="source-domain">cryptonews.net</span></h4>
+  <blockquote class="editor-note">Independent confirmation of the same $100K USDT loss; details the 66-day gap between dust transaction and drain. *Duplicate of the same incident — folded into single Key development.*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://en.wikipedia.org/wiki/Public-key_cryptography" rel="noopener">Public-key cryptography | Wikipedia</a> <span class="source-domain">en.wikipedia.org</span></h4>
+  <blockquote class="editor-note">Generic background reference — *below the editorial bar (encyclopedia filler).* Dropped per the doctrine that generic explainers do not belong unless the issue is an explainer edition.</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://cryptopotato.com/crypto-whale-loses-26m-after-apparent-private-key-compromise/" rel="noopener">Crypto Whale Loses $26M After Apparent Private Key Compromise | CryptoPotato</a> <span class="source-domain">cryptopotato.com</span></h4>
+  <blockquote class="editor-note">The TLBL-linked wallet suggests a single-entity treasury provider. *Subsumed into the approval-phishing Key development (same whale, same mechanism, different framing).*</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://blog.blockmagnates.com/the-contract-is-no-longer-the-whole-attack-surface-8c44cc4311cd" rel="noopener">Fryday #3: The Contract Is No Longer the Whole Attack Surface | BlockMagnates</a> <span class="source-domain">blog.blockmagnates.com</span></h4>
+  <blockquote class="editor-note">TRM Labs&#x27; H1 2026 count (207 hacks, ~$972M) is the cleanest year-over-year comparison in the day’s feed. *Secondary stat — below the editorial bar for a primary Key development.* Folded into Today&#x27;s signal as context.</blockquote>
+  
+</article>
+<article class="brief-item raw-item">
+  <h4><a href="https://smartcontractshacking.com/hacks/coreum-hack-2026" rel="noopener">Coreum Hack (2026) - $200K Lost | Smart Contract Hacking</a> <span class="source-domain">smartcontractshacking.com</span></h4>
+  <blockquote class="editor-note">The Coreum-XRPL bridge deposit-verification flaw is a useful contrast to the day&#x27;s private-key stories — same outcome, different mechanism. *Below the $1M threshold and not the day&#x27;s pattern; dropped from Key developments.*</blockquote>
+  
+</article>
+</section>
+<section class="related-reading"><h2>Related reading</h2><ul><li><a href="/guides/cold-wallet-vs-hot-wallet/"><strong>Cold Wallet vs. Hot Wallet: A Decision Framework</strong></a></li><li><a href="/guides/seed-phrases-what-they-are-and-how-people-lose-them/"><strong>Seed Phrases: What They Are and How People Lose Them</strong></a></li><li><a href="/tools/wallet-safety-checklist/"><strong>The Wallet Safety Checklist</strong></a></li></ul></section>
+<p class="brief-footer"><em>The Daily Brief is published by the Bithues Editorial Desk. Items are sourced from public reporting; inclusion is not an endorsement. Nothing here is financial, investment, or legal advice.</em></p>
     
   </article>
   <div class="adslot">

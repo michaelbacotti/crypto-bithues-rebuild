@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daily Brief — Bithues</title>
-  <meta name="description" content="Curated daily editorial from the Bithues desk on crypto safety, custody, and the threats that matter right now. No trading signals.">
+  <meta name="description" content="Curated daily editorial from the Bithues desk on digital-asset intelligence, custody, and the threats and structural shifts that matter. No trading signals, no price calls.">
   <link rel="canonical" href="https://bithues.com/newsletter/">
   <meta property="og:title" content="Daily Brief — Bithues">
-  <meta property="og:description" content="Curated daily editorial from the Bithues desk on crypto safety, custody, and the threats that matter right now. No trading signals.">
+  <meta property="og:description" content="Curated daily editorial from the Bithues desk on digital-asset intelligence, custody, and the threats and structural shifts that matter. No trading signals, no price calls.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bithues.com/newsletter/">
   <meta property="og:image" content="https://bithues.com/og-image.jpg">
@@ -273,6 +273,239 @@
       color: #8a8270;
       text-align: center;
     }
+
+    /* === Brief article structure (new editorial framework) === */
+    .brief-headline {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .brief-eyebrow {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 0.6rem;
+    }
+    .brief-headline-title {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3.5vw, 2rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.75rem;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.75rem;
+    }
+    .brief-dek {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      line-height: 1.45;
+      color: var(--ink-soft);
+      font-style: italic;
+      margin: 0;
+      max-width: 60ch;
+    }
+    .brief-signal,
+    .brief-why,
+    .brief-todo,
+    .brief-developments,
+    .brief-raw,
+    .related-reading {
+      margin: 2rem 0;
+      padding: 1.5rem 0;
+    }
+    .brief-signal h2,
+    .brief-why h2,
+    .brief-todo h2,
+    .brief-developments h2,
+    .brief-raw h2,
+    .related-reading h2 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 1rem;
+    }
+    .brief-signal p {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: var(--ink);
+      margin: 0;
+    }
+    .brief-why ul,
+    .brief-todo ul {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--ink);
+      padding-left: 1.25rem;
+      margin: 0;
+    }
+    .brief-why li,
+    .brief-todo li {
+      margin-bottom: 0.6rem;
+    }
+    .brief-development {
+      border-left: 3px solid var(--accent);
+      padding: 0.5rem 0 0.5rem 1.25rem;
+      margin: 0 0 1.5rem;
+    }
+    .dev-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .dev-title {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.005em;
+      margin: 0;
+    }
+    .dev-title a {
+      color: var(--ink);
+      border-bottom: 2px solid var(--accent);
+    }
+    .dev-severity {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      flex-shrink: 0;
+    }
+    .dev-fields {
+      font-family: var(--serif);
+      margin: 0.5rem 0;
+      display: grid;
+      grid-template-columns: 9rem 1fr;
+      gap: 0.35rem 1rem;
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+    .dev-fields dt {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      font-weight: 600;
+      margin: 0.15rem 0 0;
+    }
+    .dev-fields dd {
+      margin: 0.15rem 0 0;
+      color: var(--ink);
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      list-style: none;
+      padding: 0;
+      margin: 0.6rem 0;
+    }
+    .tag-list li {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+      background: var(--paper-warm);
+      color: var(--ink-soft);
+      padding: 0.15rem 0.55rem;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+    .source-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.4rem 0 0;
+      font-family: var(--sans);
+      font-size: 0.85rem;
+    }
+    .source-list li {
+      margin: 0.2rem 0;
+      word-break: break-all;
+    }
+    .source-label {
+      color: var(--ink-muted);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      margin-right: 0.4rem;
+    }
+    /* Raw pipeline archive */
+    .brief-raw {
+      background: var(--paper-warm);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin-top: 2.5rem;
+    }
+    .brief-raw h2 { color: var(--ink-soft); }
+    .pipeline-note {
+      font-family: var(--serif);
+      color: var(--ink-muted);
+      font-size: 0.95rem;
+      margin: 0 0 1rem;
+    }
+    .raw-item {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      padding: 0.85rem 1.1rem;
+      margin-bottom: 0.85rem;
+      border-radius: 6px;
+    }
+    .raw-item h4 {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.4rem;
+      color: var(--ink);
+    }
+    .raw-item h4 .source-domain {
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      margin-left: 0.4rem;
+    }
+    .raw-item .editor-note {
+      background: transparent;
+      border-left: 2px solid var(--rule);
+      padding: 0.25rem 0 0.25rem 0.85rem;
+      font-style: italic;
+      color: var(--ink-soft);
+      margin: 0.4rem 0;
+      font-size: 0.92rem;
+    }
+    .raw-item .disposition {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      margin: 0.4rem 0 0;
+    }
+    .disp-label {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-right: 0.4rem;
+    }
   </style>
   <script type="application/ld+json">
 {
@@ -280,7 +513,7 @@
   "@type": "Blog",
   "name": "Bithues Daily Brief",
   "url": "https://bithues.com/newsletter/",
-  "description": "Daily editorial on crypto safety, custody, and current threats.",
+  "description": "Daily editorial on digital-asset intelligence: custody, market structure, and threats.",
   "publisher": {
     "@type": "Organization",
     "name": "Bithues",
@@ -289,11 +522,11 @@
   "blogPost": [
     {
       "@type": "BlogPosting",
-      "headline": "The Daily Brief: August 13, 2026",
+      "headline": "The Daily Brief: August 13, 2026 \u2014 Private-Key Failures Are Still Crypto's Core Weakness",
       "url": "https://bithues.com/newsletter/2026-08-13/",
       "datePublished": "2026-08-13",
       "dateModified": "2026-08-13",
-      "description": "If you read one story today, read the Blockaid point: \"private-key compromise is the original sin of crypto.\" The day\u2019s feed is dominated by a single thread \u2014 private-key leakage \u2014 and the related kno",
+      "description": "Three custody incidents in 24 hours, each probing a different layer of the stack.",
       "author": {
         "@type": "Organization",
         "name": "Bithues Editorial"
@@ -314,15 +547,15 @@
   <main>
     <section class="index-header">
       <p class="eyebrow">Daily Brief</p>
-      <h1>The Brief: what happened today, and what it means for you</h1>
-      <p class="dek">A daily editorial from the Bithues desk on the crypto safety, custody, and threat stories worth your attention. No trading signals, no price calls — just the news, parsed for holders and users.</p>
+      <h1>The Daily Brief: digital-asset intelligence, edited</h1>
+      <p class="dek">A daily editorial from the Bithues desk on the custody, market structure, and threat stories worth your attention. No trading signals, no price calls — just the news, parsed for holders and operators.</p>
     </section>
 
     <div class="brief-grid">
       <article class="brief-card">
-      <div class="meta"><time datetime="2026-08-13">August 13, 2026</time><span class="item-count">15 items</span></div>
-      <h2><a href="/newsletter/2026-08-13/">August 13, 2026</a></h2>
-      <p class="brief-excerpt">If you read one story today, read the Blockaid point: "private-key compromise is the original sin of crypto." The day’s feed is dominated by a single thread — private-key leakage — and the related…</p>
+      <div class="meta"><time datetime="2026-08-13">August 13, 2026</time><span class="item-count">4 developments</span></div>
+      <h2><a href="/newsletter/2026-08-13/">Private-Key Failures Are Still Crypto&#x27;s Core Weakness</a></h2>
+      <p class="brief-excerpt">Three custody incidents in 24 hours, each probing a different layer of the stack.</p>
       <a href="/newsletter/2026-08-13/" class="cta">Read the brief →</a>
     </article>
     </div>
